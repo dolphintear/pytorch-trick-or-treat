@@ -22,3 +22,9 @@
         requires_grad = False
         volatile = False
         ```
+        
+# TODO
+* `backward` VS `grad`
+    * backward function only calculate grads for parameters and input variables (with required_grad=True).
+    * grad function simply caculate grads for related parameters.
+* `retain_graph` VS `creat_graph`
